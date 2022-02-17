@@ -4,21 +4,13 @@ This example demonstrates how to use the Tauri sidecar feature. It uses [pkg](ht
 
 ## Running the example
 
-- Compile Tauri
-go to root of the Tauri repo and run:
-Linux / Mac:
-```
-# choose to install node cli (1)
-bash .scripts/setup.sh
-```
+- Install [nvm](https://github.com/nvm-sh/nvm)
 
-Windows:
-```
-./.scripts/setup.ps1
-```
-
-- Install dependencies (Run inside of this folder `examples/sidecar/`)
+- Install dependencies (Run inside of this folder `sidecar/`)
 ```bash
+$ nvm install
+$ nvm use
+
 # with yarn
 $ yarn
 # with npm
@@ -28,7 +20,7 @@ $ yarn tauri
 $ yarn package
 ```
 
-- Run the app in development mode (Run inside of this folder `examples/sidecar/`)
+- Run the app in development mode (Run inside of this folder `sidecar/`)
 ```bash
 # with yarn
 $ yarn tauri dev
@@ -36,8 +28,7 @@ $ yarn tauri dev
 $ npm run tauri dev
 ```
 
-- Build an run the release app (Run inside of this folder `examples/sidecar/`)
+- Build an run the release app (Run inside of this folder `sidecar/`)
 ```bash
 $ yarn tauri build
-$ ./src-tauri/target/release/app
 ```
