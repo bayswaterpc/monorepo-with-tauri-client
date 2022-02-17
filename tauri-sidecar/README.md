@@ -10,6 +10,7 @@ This example demonstrates how to use the Tauri sidecar feature. It uses [pkg](ht
 ```bash
 $ nvm install
 $ nvm use
+$ npm install -g yarn
 
 # with yarn
 $ yarn
